@@ -102,9 +102,10 @@ set isk=@,48-57,_,?,!,192-255
 set nu
 set showtabline=2
 
-nmap ,, :tabnew<CR>
-nmap ,. :tabnext<CR>
-nmap ., :tabpre<CR>
+nmap <leader>, :tabnew<CR>
+nmap <leader>. :tabnext<CR>
+nmap .<leader> :tabpre<CR>
+nmap <leader>t :CommandT<CR>
 map <C-T> :CommandT<CR>
 
 set wildmode=list:longest
