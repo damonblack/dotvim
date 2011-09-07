@@ -1,7 +1,7 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/dblack/ftt2/test/fixtures'
-let g:netrw_dirhist_2='/home/dblack/ftt2/test/factories'
-let g:netrw_dirhist_3='/home/dblack/ftt2/test'
-let g:netrw_dirhist_4='/home/dblack/ftt2/test/fixtures'
-let g:netrw_dirhist_5='/home/dblack/ftt2/db/migrate'
+let g:netrw_dirhist_1='/home/dblack/projects/botballjs/spec/javascripts'
+let g:netrw_dirhist_2='/home/dblack/projects/botballjs/spec/javascripts/helpers'
+let g:netrw_dirhist_3='/home/dblack/projects/botballjs/spec/javascripts'
+let g:netrw_dirhist_4='/home/dblack/projects/botballjs/spec'
+let g:netrw_dirhist_5='/home/dblack/projects/botballjs/spec/javascripts'
