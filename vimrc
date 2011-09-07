@@ -17,6 +17,9 @@ set shiftwidth=2
 set expandtab
 set foldmethod=indent
 
+set nobackup
+set noswapfile
+
 "incrementally search file"
 set incsearch
 
@@ -35,6 +38,8 @@ set autowrite
 "move swp files into .vim-tmp/"
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+
+nnoremap ; :
 
 map <leader>e :e#<CR>
 map <leader>b :FuzzyFinderBuffer<CR>
