@@ -16,6 +16,7 @@ set tabstop=2
 set shiftwidth=2 
 set expandtab
 set foldmethod=indent
+set tags=tmp/tags
 
 set nobackup
 set noswapfile
@@ -97,7 +98,7 @@ augroup RubyTests
   autocmd BufRead,BufNewFile *_spec.rb
     \ :nmap gs V:<C-U>!$HOME/.vim/bin/ruby-run-focused-spec
     \ % <C-R>=line("'<")<CR>p <CR>|
-    \ :nmap gS :<C-U>!spec %<CR>
+    \ :nmap gS :<C-U>!rspec %<CR>
 augroup END
 
 set ai

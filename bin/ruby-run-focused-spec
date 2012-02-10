@@ -2,12 +2,6 @@
 
 filename = ARGV[0]
 line_number = ARGV[1].to_i
-lines = File.read(filename).split(/\n/)
-(line_number - 1).downto(0) do |i|
-  if lines[i] =~ /\s*it ["|'](.+)["|']/
-    cmd = %{spec "#{filename}" -e "#{$1}" --drb}
-    puts cmd
-    system cmd
-    exit
-  end
-end
+cmd = %{rspec "#{filename}:#{line_number}" --drb}
+puts cmd
+system cmd
