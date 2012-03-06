@@ -1,11 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/dblack'
-let g:netrw_dirhist_2='/home/dblack/less-rails-bootstrap-test/app'
-let g:netrw_dirhist_3='/home/dblack/less-rails-bootstrap-test/app/controllers'
-let g:netrw_dirhist_4='/home/dblack/less-rails-bootstrap-test/app'
-let g:netrw_dirhist_5='/home/dblack/less-rails-bootstrap-test/app/assets'
-let g:netrw_dirhist_6='/home/dblack/less-rails-bootstrap-test/app'
-let g:netrw_dirhist_7='/home/dblack/less-rails-bootstrap-test'
-let g:netrw_dirhist_8='/home/dblack/ftt2/app'
-let g:netrw_dirhist_9='/home/dblack/ftt2/app/models'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/home/dblack/achiever/app'
+let g:netrw_dirhist_2='/home/dblack/achiever'
