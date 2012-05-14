@@ -5,6 +5,17 @@ filetype indent on
 nnoremap <silent> <F8> :TlistToggle<CR>
 setlocal shiftround
 
+
+" crtl-p settings
+map <leader>t :CtrlP<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
+nnoremap <leader>B :CtrlP<CR>
+
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
+set wildignore+=*/.jhw-cache/*
+set wildignore+=*/*.js.coffee.js
+set wildignore+=*/*.js.js
+
 call pathogen#infect()
 call pathogen#helptags()
 
@@ -111,10 +122,7 @@ set showtabline=2
 nmap <leader>, :tabnew<CR>
 nmap <leader>. :tabnext<CR>
 nmap .<leader> :tabpre<CR>
-nmap <leader>t :CommandT<CR>
-map <C-T> :CommandT<CR>
 
-set wildmode=list:longest
 set shortmess=atI
 
 colorscheme desert
