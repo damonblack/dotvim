@@ -28,3 +28,6 @@
 [submodule "Floobits"]
 	path = Floobits
 	url = https://github.com/Floobits/floobits-vim
+[submodule "bundle/Floobits"]
+	path = bundle/Floobits
+	url = https://github.com/Floobits/floobits-vim
