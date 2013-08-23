@@ -5,11 +5,7 @@ filetype indent on
 nnoremap <silent> <F8> :TlistToggle<CR>
 setlocal shiftround
 
-
 " crtl-p settings
-map <leader>t :CtrlP<CR>
-nnoremap <leader>b :CtrlPBuffer<CR>
-nnoremap <leader>B :CtrlP<CR>
 
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 set wildignore+=*/.jhw-cache/*
@@ -23,8 +19,8 @@ set t_Co=256
 
 let mapleader = ","
 
-set tabstop=2 
-set shiftwidth=2 
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set foldmethod=indent
 set tags=tmp/tags
@@ -62,7 +58,8 @@ nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 " Split screen vertically and move between screens.
-map <leader>v :vsp<CR> 
+map <leader>t <C-P>
+map <leader>v :vsp<CR>
 map <leader>h h
 map <leader>j j
 map <leader>k k
@@ -77,7 +74,7 @@ nnoremap <silent><CR> :noh<CR><CR>
 au FilterWritePre * call DiffWrap()
 fun DiffWrap()
   if &diff
-    windo set wrap 
+    windo set wrap
   endif
 endfun
 
@@ -95,8 +92,9 @@ if &term=="xterm"
      set t_Sf=^[[3%dm
 endif
 
-autocmd BufRead *.as set filetype=actionscript 
-autocmd BufRead *.mxml set filetype=mxml 
+autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufRead *.as set filetype=actionscript
+autocmd BufRead *.mxml set filetype=mxml
 
 " Run Ruby unit tests with gT (for all) or gt (only test under
 " cursor) in command mode
@@ -109,13 +107,13 @@ augroup RubyTests
   autocmd BufRead,BufNewFile *_spec.rb
     \ :nmap gs V:<C-U>!$HOME/.vim/bin/ruby-run-focused-spec
     \ % <C-R>=line("'<")<CR>p <CR>|
-    \ :nmap gS :<C-U>!rspec %<CR>
+    \ :nmap gS :<C-U>!bundle exec rspec %<CR>
 augroup END
 
 set ai
 set isk=@,48-57,_,?,!,192-255
 
-" From nat's file 
+" From nat's file
 set nu
 set showtabline=2
 
@@ -126,3 +124,7 @@ nmap .<leader> :tabpre<CR>
 set shortmess=atI
 
 colorscheme desert
+
+if v:version > '702'
+  set colorcolumn=80
+endif
