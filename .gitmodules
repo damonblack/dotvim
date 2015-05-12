@@ -31,3 +31,6 @@
 [submodule "bundle/Floobits"]
 	path = bundle/Floobits
 	url = https://github.com/Floobits/floobits-vim
+[submodule "/Users/damonblack/.vim/bundle/vim-javascript"]
+	path = /Users/damonblack/.vim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git

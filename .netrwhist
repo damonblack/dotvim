@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/dblack/src/fort_hill_company/we-achieve/app/assets/javascripts/collections'
-let g:netrw_dirhist_2='/home/dblack/src/fort_hill_company/we-achieve/app/assets/javascripts/views/user_app'
-let g:netrw_dirhist_3='/home/dblack/src/fort_hill_company/we-achieve/app/assets/javascripts/views'
-let g:netrw_dirhist_4='/home/dblack/src/fort_hill_company/we-achieve/app/assets/javascripts'
-let g:netrw_dirhist_5='/home/dblack/src/fort_hill_company/we-achieve/app/assets/javascripts/views/user_app'
