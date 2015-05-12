@@ -19,6 +19,8 @@ set t_Co=256
 
 let mapleader = ","
 
+let g:jsx_ext_required = 0
+
 set tabstop=2
 set shiftwidth=2
 set expandtab
