@@ -37,3 +37,6 @@
 [submodule "bundle/vim-jsx"]
 	path = bundle/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
+[submodule "/Users/damonblack/.vim/bundle/vim-go"]
+	path = /Users/damonblack/.vim/bundle/vim-go
+	url = https://github.com/fatih/vim-go.git
